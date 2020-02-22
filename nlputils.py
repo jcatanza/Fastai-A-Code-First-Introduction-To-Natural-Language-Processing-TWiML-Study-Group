@@ -4,9 +4,9 @@ import re
 
 def get_wiki(path,lang):
     name = f'{lang}wiki'
-    if (path/name).exists():
-        print(f"{path/name} already exists; not downloading")
-        return
+    #if (path/name).exists():
+    #    print(f"{path/name} already exists; not downloading")
+    #   return
 
     xml_fn = f"{lang}wiki-latest-pages-articles.xml"
     zip_fn = f"{xml_fn}.bz2"
